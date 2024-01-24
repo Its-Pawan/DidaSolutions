@@ -1,0 +1,11 @@
+.services-container {
+  position: relative;
+  margin-top: -18rem !important;
+  .cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 3rem;
+  }
+}

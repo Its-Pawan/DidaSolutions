@@ -1,0 +1,26 @@
+.CompanyProfile {
+  margin-top: 10rem;
+  .company-profile {
+    h1 {
+        font-size: calc(var(--common-font-size2) + 1.6rem);
+        color: var(--sky-blue-3);
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: var(--common-font-size2);
+        color: var(--gray);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    p {
+        font-size: var(--common-font-size1);
+        color: var(--gray2);
+        font-weight: 300;
+        margin-top: 25px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+  }
+}

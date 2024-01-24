@@ -1,0 +1,64 @@
+.navbar {
+  position: relative;
+  z-index: 999;
+  .menu {
+    .menu-items {
+      .menu-item {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: all var(--hover-animation);
+        a {
+          height: 100%;
+          font-weight: 500;
+          font-size: calc(var(--common-font-size1) - .2rem);
+          display: flex;
+          align-items: center;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: transparent;
+          height: 3px;
+          width: 2rem;
+          bottom: 10%;
+          left: 50%;
+          border-radius: 10px;
+          transform: translateX(-50%);
+          transition: background-color var(--hover-animation),
+            bottom var(--hover-animation);
+        }
+
+        &:hover::after {
+          background-color: var(--sky-blue);
+          bottom: 20%;
+        }
+      }
+
+      .menu-item:nth-child(1) {
+        &::after {
+          background-color: var(--sky-blue);
+          bottom: 20%;
+        }
+      }
+    }
+  }
+  .hover-services {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: calc(0px + 120px);
+    animation: servicesOpacity;
+    animation-duration: 0.5s;
+  }
+  @keyframes servicesOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
