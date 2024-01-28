@@ -1,21 +1,22 @@
-import './PortfolioCart.scss'
-
-const PortfolioCart = () => {
+import "./PortfolioCart.scss";
+import { FaPlus } from "react-icons/fa";
+const PortfolioCart = ({ img, imgTitle, isClicked }) => {
+  // console.log(img);
   return (
-    <div className='PortfolioCart'>
-        <div class="col-sm-6 col-xs-6 col-md-3 mb-4 text-center col-sm-4">
-				<div class="img-wrap">
-					<a data-fancybox="gallery" data-src="/assets/images/project-gallery/1.jpg" data-caption="">
-						<img src="./assets/portfolio/1.jpg"/>
-						<div class="gallery-overlay">
-							<h3>Vaemalaa</h3>
-							<i class="fa fa-plus"></i>
-						</div>
-					</a>
-				</div>
-			</div>
+    <div className="PortfolioCart " onClick={isClicked}>
+      <div className="  text-center ">
+        <div className="img-wrap">
+          <a>
+            <img src={img} alt={imgTitle} />
+            <div className="gallery-overlay">
+              <h3>{imgTitle}</h3>
+              <FaPlus className="fa text-center w-full" />
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PortfolioCart
+export default PortfolioCart;

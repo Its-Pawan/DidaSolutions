@@ -1,14 +1,15 @@
 // App.jsx
 import React, { useState, useEffect } from "react";
 // import WorksCart from "./WorksCart"; // Import the WorksCart array
-import FeaturesData from "./FeaturesData";
+// import FeaturesData from "./FeaturesData";
+import PortfolioData from "./PortfolioData";
 
 const TestApi = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     // Set the data from the imported WorksCart array
-    setData(FeaturesData);
+    setData(PortfolioData);
   }, []);
 
   return (
@@ -17,8 +18,10 @@ const TestApi = () => {
       <ul>
         {data.map((item) => (
           <li key={item.id}>
-            {item.title} - {item.type} - <img src={item.icon} alt="" /> -{" "}
+            <img src={item.icon} alt="" /> -{" "}
             {item.projectNumber} - {item.desc}
+
+
           </li>
         ))}
       </ul>

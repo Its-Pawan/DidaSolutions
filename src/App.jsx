@@ -1,4 +1,3 @@
-import "./App.css";
 import CompanyProfile from "./components/CompanyProfile/CompanyProfile";
 import Featured from "./components/Featured/Featured";
 import Header from "./components/Header/Header";
@@ -12,9 +11,10 @@ function App() {
       <Header />
       <Services />
       <CompanyProfile />
-      <Featured/>
-      <HomeContactBtn/>
-      {/* <Portfolio/> */}
+      <Featured />
+      <HomeContactBtn />
+      <Portfolio />
+      
     </>
   );
 }
