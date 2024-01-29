@@ -1,0 +1,29 @@
+.hover-page {
+  border-bottom: 5px solid var(--black);
+  background-color: var(--yellow);
+  // height: 100vh;
+  .left-overlay {
+    position: relative;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .right-overlay {
+    // padding: 25px 15px;
+    h2 {
+      font-size: 1.3rem;
+      padding: 1rem 0;
+      color: var(--white);
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .hover-page {
+    display: none;
+  }
+}

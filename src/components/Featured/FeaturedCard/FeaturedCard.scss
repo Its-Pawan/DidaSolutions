@@ -1,0 +1,67 @@
+.FeaturedCard {
+  .features-box {
+    background: #e8f0f5;
+    padding: 35px;
+    border-radius: 5px;
+    height: 320px;
+    min-height: 250px;
+    position: relative;
+    -moz-transition: var(--hover-services-cart);
+    -o-transition: var(--hover-services-cart);
+    transition: var(--hover-services-cart);
+    .features-icon {
+      width: 100px;
+      height: 100px;
+      background: #0a8add;
+      position: absolute;
+      top: -50px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      -moz-transition: var(--hover-services-cart);
+      -o-transition: var(--hover-services-cart);
+      transition: var(--hover-services-cart);
+      img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+    p {
+      font-size: var(--common-font-size1);
+      color: #6c6a6a;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    &:hover {
+      background-image: -ms-linear-gradient(top, #1c8dcd 0%, #125dc4 100%);
+      background-image: -moz-linear-gradient(top, #1c8dcd 0%, #125dc4 100%);
+      background-image: -o-linear-gradient(top, #1c8dcd 0%, #125dc4 100%);
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #1c8dcd),
+        color-stop(100, #125dc4)
+      );
+      background-image: -webkit-linear-gradient(top, #1c8dcd 0%, #125dc4 100%);
+      background-image: linear-gradient(to bottom, #1c8dcd 0%, #125dc4 100%);
+
+      .features-icon {
+        background: #e8f0f5;
+        img {
+          -webkit-filter: brightness(1) invert(0);
+          filter: brightness(1) invert(0);
+        }
+      }
+      p {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .FeaturedCard .features-box {
+    height: 250px;
+  }
+}

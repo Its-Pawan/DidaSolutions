@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --container-width: 1200px;
+    --black: #000;
+    --gray: #404040;
+    --gray2: #6c6a6a;
+    --sky-blue: #06b2ff;
+    --sky-blue-2: #0c79cf;
+    --sky-blue-3: #0a8add;
+    --hover-animation: .2s ease-in;
+    --hover-services-cart: all .5s;
+    --white: #fff;
+    --yellow: #ffb820;
+    --body-bg: #e8f0f5;
+    --common-font-size1: 1.4rem;
+    --common-font-size2: 2rem;
+    --main-title-font: 3.5rem;
+}
+
+.main-title {
+    font-size: var(--main-title-font);
+    color: var(--sky-blue-3);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+body {
+    background-color: var(--body-bg);
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    /* max-width: 1280px !important; */
+    margin: auto;
+}
+
+@media only screen and (max-width: 440px){
+  :root{
+    --common-font-size1: 1rem;
+    --common-font-size2: 1.2rem;
+    --main-title-font: 2.8rem;
+  }
+}
