@@ -94,4 +94,9 @@ const SliderBase = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 440px) {
+    .swiper .swiper-slide img {
+      height: calc(100vh - 20rem);
+    }
+  }
 `;

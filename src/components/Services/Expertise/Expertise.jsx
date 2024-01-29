@@ -2,7 +2,7 @@ import "./Expertise.scss";
 
 const Expertise = () => {
   return (
-    <div className="w-[25%]">
+    <div className="w-full md:w-[25%]">
       <div className="expertise">
         <div className="expertise-text-block">
           <h2>MAKING HISTORY</h2>

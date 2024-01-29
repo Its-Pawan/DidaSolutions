@@ -5,8 +5,8 @@ const CompanyProfile = () => {
   return (
     <div className="CompanyProfile">
       <div className="container company-profile">
-        <div className="flex justify-between">
-          <div className="w-[40%]">
+        <div className="flex flex-col  justify-between gap-8 md:gap-0 md:flex-row md:justify-between">
+          <div className=" w-full md:w-[40%]">
             <h1>About Dida Solution</h1>
             <h2>
               Dida Solution LLP is Best Website
@@ -30,7 +30,7 @@ const CompanyProfile = () => {
             </a>
           </div>
 
-          <div className=" two-part w-50% flex justify-between gap-5">
+          <div className=" two-part w-full md:w-[50%] flex justify-between md:gap-5 gap-3">
             <div className="w-[50%] ">
               <img src="./assets/one.jpg" className="img-responsive" />
             </div>

@@ -64,6 +64,14 @@ li {
 }
 
 .container {
-    /* max-width: var(--container-width) ; */
+    /* max-width: 1280px !important; */
     margin: auto;
+}
+
+@media only screen and (max-width: 440px){
+  :root{
+    --common-font-size1: 1rem;
+    --common-font-size2: 1.2rem;
+    --main-title-font: 2.8rem;
+  }
 }

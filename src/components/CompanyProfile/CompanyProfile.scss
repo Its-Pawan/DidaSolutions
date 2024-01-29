@@ -2,7 +2,7 @@
   margin-top: 10rem;
   .company-profile {
     h1 {
-        font-size: calc(var(--common-font-size2) + 1.6rem);
+        font-size: calc(var(--main-title-font) );
         color: var(--sky-blue-3);
         font-weight: 600;
         line-height: 1.5;
@@ -18,9 +18,22 @@
         font-size: var(--common-font-size1);
         color: var(--gray2);
         font-weight: 300;
-        margin-top: 25px;
+        margin: 25px 0;
         line-height: 1.5;
-        margin-bottom: 25px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 440px){
+  .CompanyProfile{
+    margin-top: 0;
+    padding: 0 20px;
+    h1{
+      font-size: calc(var(--main-title-font) - .2rem ) !important;
+    }
+    p{
+      margin: 15px 0 !important;
     }
   }
 }

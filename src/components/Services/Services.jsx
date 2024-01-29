@@ -7,9 +7,9 @@ import WorksCart from "../../WorksCart";
 const Services = () => {
   return (
     <div className="container services-container ">
-      <div className="services-content flex  justify-between">
-        <Expertise className="w-[22%]" />
-        <div className="cards w-[73%]">
+      <div className="services-content flex flex-col md:flex-row justify-between">
+        <Expertise className="w-full md:w-[22%]" />
+        <div className="cards w-full md:w-[73%]">
           {WorksCart.map((work) => (
             <ServicesCard
               key={work.id}

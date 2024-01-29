@@ -2,10 +2,14 @@
 import Banner from "../Banner/Banner";
 import Navbar from "../navbar/Navbar";
 
-const Header = () => {
+const Header = ({ showMenu, menuActive, menuDeactive }) => {
   return (
-    <header className="header h-[100vh]">
-      <Navbar />
+    <header className="header h-[18rem] md:h-[100vh]">
+      <Navbar
+        showMenu={showMenu}
+        menuActive={menuActive}
+        menuDeactive={menuDeactive}
+      />
       <Banner />
     </header>
   );

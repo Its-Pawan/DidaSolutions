@@ -57,7 +57,7 @@
           transition: var(--hover-services-cart);
         }
         span.count-label {
-          font-size: 1.5rem;
+          font-size: var(--common-font-size2);
           text-align: center;
           -moz-transition: var(--hover-services-cart);
           -o-transition: var(--hover-services-cart);
@@ -91,6 +91,19 @@
       }
       .icon-wrapper .icon-cover img {
         filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .ServiceSingleCart {
+    margin: 0 0px;
+    .expertise-card {
+      padding: 20px 10px;
+       .icon-wrapper .icon-cover img {
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
   }

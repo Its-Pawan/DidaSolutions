@@ -26,14 +26,14 @@ const Portfolio = () => {
 
   return (
     <Gallery className="Portfolio ">
-      <div className="container pt-24">
+      <div className="container pt-10 px-5 md:px-0 md:pt-24">
         <div className="text-center ">
           <h4 className="main-title">Our Portfolio</h4>
           <p>
             Following are some of the prestigious projects we have developed
           </p>
         </div>
-        <div className="portfolio-base grid grid-cols-4 grid-rows-1 gap-11 ">
+        <div className="portfolio-base grid grid-cols-2 md:grid-cols-4 grid-rows-1 md:gap-11 gap-6 ">
           {data.map((item) => (
             <PortfolioCart
               key={item.id}
@@ -63,6 +63,7 @@ const Portfolio = () => {
 export default Portfolio;
 
 const Gallery = styled.div`
+padding-bottom: 5rem;
   /* margin-top: 80px; */
   position: relative;
   background-color: var(--white);

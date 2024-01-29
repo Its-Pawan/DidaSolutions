@@ -14,4 +14,8 @@ export default HomeContactBtn;
 
 const HomeContact = styled.div`
   min-height: 15rem;
+  @media only screen and (max-width: 440px){
+    min-height: 10rem;
+
+  }
 `;

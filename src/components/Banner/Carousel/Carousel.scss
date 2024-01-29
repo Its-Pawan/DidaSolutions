@@ -59,6 +59,7 @@
     li {
       margin: 5px 8px;
       height: auto;
+      width: auto;
       button {
         font-size: 10px;
         width: 20px;
@@ -85,7 +86,6 @@
   }
   .slick-active .slider-caption {
     h3 {
-      
       top: -7rem;
       animation: slideInFromTop 1.5s forwards;
     }
@@ -107,7 +107,7 @@
     top: 0;
   }
 }
-@keyframes slideInFromBottom  {
+@keyframes slideInFromBottom {
   0% {
     bottom: -7rem;
     opacity: 0;
@@ -115,5 +115,33 @@
   100% {
     opacity: 1;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .carousel-container {
+    // top: 0;
+    .slider-caption{
+      display: none;
+    }
+    .slide img {
+      height: 17rem;
+      object-fit: cover;
+
+  }
+    .slick-dots {
+      flex-direction: row;
+      top: 80%;
+      li button{
+        width: 10px;
+        height: 10px;
+      }
+      .slick-active button {
+        background-color: #fff;
+        height: auto;
+        width: 30px;
+        border-radius: 20px;
+      }
+    }
   }
 }

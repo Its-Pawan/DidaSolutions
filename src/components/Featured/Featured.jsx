@@ -8,7 +8,7 @@ const Featured = () => {
     <Features>
       <div className="container">
         <h2 className="text-center main-title">Our Services</h2>
-        <div className="featured-card-container grid grid-cols-3 grid-rows-2 gap-6 gap-y-20">
+        <div className="featured-card-container grid  md:grid-cols-3 grid-rows-2 md:gap-6 md:gap-y-20 gap-y-16 px-5 md:px-0">
           {FeaturesData.map((feature) => (
             <FeaturedCard
               key={feature.id}

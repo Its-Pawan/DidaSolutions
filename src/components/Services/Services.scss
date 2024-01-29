@@ -9,3 +9,15 @@
     row-gap: 3rem;
   }
 }
+
+@media only screen and (max-width: 440px) {
+  .services-container {
+    margin-top: 0 !important;
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      row-gap: 1.5rem;
+      padding:  20px;
+    }
+  }
+}
