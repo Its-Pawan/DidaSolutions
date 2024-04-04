@@ -64,8 +64,9 @@ li {
 }
 
 .container {
-    /* max-width: 1280px !important; */
+    /* max-width: 1380px !important; */
     margin: auto;
+    padding: 0 2vw;
 }
 
 @media only screen and (max-width: 440px){
